@@ -1,0 +1,28 @@
+/**
+ * file: style.css
+ * purpose: styles, animation etc
+ * further development: meyer reset perhaps?
+ **/
+
+/* her kan du tilføje en fed baggrund*/
+body {
+    background-image: url(..);
+  background-color: skyblue;
+}
+
+/* firkant */
+h1, p {color: #fff;}
+
+/* en form to animation */
+@keyframes example {
+  from {left: 0px;}
+  to {left: 200px}
+}
+
+/* denne class kaldes og fjernes af javascriptet */
+.animate {
+  position: relative;
+  animation-name: example;
+  animation-duration: 4s;
+}
+
