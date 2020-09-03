@@ -6,17 +6,16 @@
 var myVideo = document.getElementById("myVideo");
 // preload
 myVideo.width = 420;
-myVideo.controls = true;
+myVideo.controls = true; // booleans J/N sand / falsk
 
 // the ON / OFF trick
 function playPause() {
-  if (myVideo.paused) {
-    myVideo.play();
-    myVideo.controls = false;
-      }
-  else {
-    myVideo.pause();
-    myVideo.controls = true;
+    if (myVideo.paused) {
+        myVideo.play();
+        myVideo.controls = false;
+    } else {
+        myVideo.pause();
+        myVideo.controls = true;
     }
 }
 
@@ -48,6 +47,6 @@ function makeNormal() {
 
 // eventlisteners will give you fewer codelines
 shutup.addEventListener('click',
-  function(){
-    myVideo.muted = true;
-  });
+    function () {
+        myVideo.muted = true;
+    });

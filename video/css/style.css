@@ -2,3 +2,6 @@
  * file: style.css
  * project: video sample
  **/
+body{
+    background-image: url(..//images/fiesta.png);
+}
