@@ -1,0 +1,44 @@
+/**
+ * file: style.css
+ * purpose: styles, animation etc
+ * further development: meyer reset perhaps?
+ **/
+body{
+    background-image: url(../images/Peter-pan-disneyscreencaps_com-15.jpg);
+}
+
+h1{
+    color: ghostwhite;
+    font-family: fantasy;
+}
+@keyframes moveBg {
+  from {
+      /* definerer startpunkter på det store billede*/
+      
+  background-position: 0px 0px; 
+    }
+  to {
+      /*definerer slutpunkter på det stor billede*/
+   background-position: 900px 600px; 
+  }
+    
+}
+
+/* kalder animation, og tilføjes via klik*/
+.moveIt {
+  animation-name: moveBg;
+  animation-duration: 7s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;  
+}
+
+/* den "scene" eller "åbning" vi kigger igennem den skal være mindre end baggrundsbilledet */
+#zoom {
+  position: relative;
+  overflow: hidden;
+  width: 800px;
+  height: 500px;
+  border: 1px solid #000;
+  background-image: url(../images/tomswallpapers.com.jpg);
+  
+}
